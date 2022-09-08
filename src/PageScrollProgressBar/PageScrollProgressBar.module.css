@@ -1,0 +1,19 @@
+.pageScroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  border: 0;
+  border-radius: 0;
+  height: 4px;
+}
+.pageScroll::-webkit-progress-bar {
+  background-color: var(--grey6);
+}
+.pageScroll::-webkit-progress-value {
+  background-color: var(--red);
+}
+.pageScroll::-moz-progress-bar {
+  background-color: var(--red);
+}

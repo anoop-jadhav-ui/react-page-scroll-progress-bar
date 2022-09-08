@@ -1,0 +1,25 @@
+{
+  "name": "react-page-scroll-progress-bar",
+  "version": "1.0.4",
+  "description": "Page scroll progress bar",
+  "main": "dist/",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Anoop Jadhav @anoop-jadhav-ui <anoopjadhav@gmail.com>",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "files": [
+    "/dist"
+  ]
+}
