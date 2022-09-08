@@ -8,6 +8,10 @@
     "build": "tsc"
   },
   "author": "Anoop Jadhav @anoop-jadhav-ui <anoopjadhav@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anoop-jadhav-ui/react-page-scroll-progress-bar.git"
+  },
   "license": "ISC",
   "peerDependencies": {
     "react": "^18.2.0",
@@ -21,5 +25,8 @@
   },
   "files": [
     "/dist"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
