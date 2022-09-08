@@ -4,7 +4,7 @@
 Scroll bar to show the scroll progress of the page at the top of the page.
 
 <p>
-  <img src='https://i.postimg.cc/RZZXxTXK/page-Scroll.gif' border='0' alt='page-Scroll'/>
+  <img src='https://github.com/anoop-jadhav-ui/react-page-scroll-progress-bar/blob/44f9702e119c2b3ef5220f3f7e33a119e3c76152/src/assets/pageScroll.gif' alt='page-Scroll'/>
 </p>
 
 ## Installation
