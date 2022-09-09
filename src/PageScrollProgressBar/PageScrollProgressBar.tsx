@@ -2,9 +2,9 @@ import React, { useEffect, useMemo, useState } from "react";
 import styles from "./PageScrollProgressBar.module.css";
 interface Props {
   AppRef: React.RefObject<HTMLDivElement>;
-  progressBarColor: string;
-  progressBarBgColor: string;
-  progressBarHeight: string;
+  progressBarColor?: string;
+  progressBarBgColor?: string;
+  progressBarHeight?: string;
 }
 export const PageScrollProgressBar = ({ AppRef, progressBarColor, progressBarBgColor, progressBarHeight }: Props) => {
   const [scrollPosition, setscrollPosition] = useState<number>(0);

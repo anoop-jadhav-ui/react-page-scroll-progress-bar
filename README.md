@@ -26,10 +26,26 @@ Import the component
 
 ```bash
 import PageScrollProgressBar from "react-page-scroll-progress-bar";
-
 ```
 
-Pass the reference of the parent most HTML element of your react app. for eg -
+
+Required props:
+
+
+| Parameter | Description                                                                |	
+|:----------|:---------------------------------------------------------------------------|
+| AppRef 	  | 	The reference (useRef) of the parent most HTML element of your react app. |the score from the classifier for each C position
+
+Optional props:
+
+| Parameter           |     Default      | Description   |	
+|:--------------------|:----------------:| :-------------|
+| progressBarColor 	  |     	#eb5757     |Color of the progress bar as a hex string
+| progressBarBgColor  |     #f2f2f2      |Color of the progress bar background as a hex string 
+| progressBarHeight 	 | 	0.25rem or 4px	 |Height of the progress bar
+
+
+####Example - 
 
 ```bash
 
@@ -38,7 +54,7 @@ const App = () => {
   const AppRef = useRef(null); 
 
   return (
-    <PageScrollProgressBar AppRef={AppRef} />
+    <PageScrollProgressBar AppRef={AppRef} progressBarColor="#00FFFF" progressBarBgColor="#f2f2f2" progressBarHeight="6px" />
     <div className="App" ref={AppRef}>
       APP
     </div>
