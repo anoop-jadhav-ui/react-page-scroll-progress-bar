@@ -28,27 +28,23 @@ Import the component
 import PageScrollProgressBar from "react-page-scroll-progress-bar";
 ```
 
+###Required props:
 
-Required props:
-
-
-| Parameter | Description                                                                |	
+| Parameter | Description                                                                |
 |:----------|:---------------------------------------------------------------------------|
-| AppRef 	  | 	The reference (useRef) of the parent most HTML element of your react app. |the score from the classifier for each C position
+| AppRef  | The reference (useRef) of the parent most HTML element of your react app. |the score from the classifier for each C position
 
-Optional props:
+###Optional props:
 
-| Parameter           |     Default      | Description   |	
+| Parameter           |     Default      | Description   |
 |:--------------------|:----------------:| :-------------|
-| progressBarColor 	  |     	#eb5757     |Color of the progress bar as a hex string
+| progressBarColor  |     #eb5757     |Color of the progress bar as a hex string
 | progressBarBgColor  |     #f2f2f2      |Color of the progress bar background as a hex string 
-| progressBarHeight 	 | 	0.25rem or 4px	 |Height of the progress bar
+| progressBarHeight | 0.25rem or 4px |Height of the progress bar
 
-
-####Example - 
+###Example -
 
 ```bash
-
 const App = () => {
 
   const AppRef = useRef(null); 
@@ -61,8 +57,6 @@ const App = () => {
   )
 
 }
-
-
 ```
 
 [checkout the source code](https://github.com/anoop-jadhav-ui/react-page-scroll-progress-bar)
