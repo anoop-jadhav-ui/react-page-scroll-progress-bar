@@ -6,14 +6,14 @@
   z-index: 1;
   border: 0;
   border-radius: 0;
-  height: 4px;
+  height: var(--page-scroll-height);
 }
 .pageScroll::-webkit-progress-bar {
-  background-color: var(--grey6);
+  background-color: var(--page-scroll-background-color);
 }
 .pageScroll::-webkit-progress-value {
-  background-color: var(--red);
+  background-color: var(--page-scroll-bar-color);
 }
 .pageScroll::-moz-progress-bar {
-  background-color: var(--red);
+  background-color: var(--page-scroll-bar-color);
 }
