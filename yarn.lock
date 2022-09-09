@@ -38,6 +38,11 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
+json5@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.1.tgz#655d50ed1e6f95ad1a3caababd2b0efda10b395c"
+  integrity sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==
+
 loose-envify@^1.1.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/loose-envify/-/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
@@ -67,7 +72,15 @@ scheduler@^0.23.0:
   dependencies:
     loose-envify "^1.1.0"
 
-typescript@^4.8.3:
+tsc-hooks@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/tsc-hooks/-/tsc-hooks-1.1.1.tgz#0b6d2bab92b4056e87f81aea84aa5965356b1054"
+  integrity sha512-IqEcFlxAxJwf1eeu+TT5VALC5k5RiImXOGd/fTAMCQI3p4bdG6uVdDoP2zeM9YwqAG5detMg6Ka7b2ewlUMVbQ==
+  dependencies:
+    json5 "^2.2.0"
+    typescript "^4.3.2"
+
+typescript@^4.3.2, typescript@^4.8.3:
   version "4.8.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.3.tgz#d59344522c4bc464a65a730ac695007fdb66dd88"
   integrity sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==
