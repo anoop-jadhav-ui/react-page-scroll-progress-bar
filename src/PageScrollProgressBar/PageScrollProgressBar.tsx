@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import styles from "./PageScrollProgressBar.module.css";
 interface Props {
-  container: HTMLElement;
+  container?: HTMLDivElement | HTMLElement | null;
   color?: string;
   bgColor?: string;
   height?: string;
@@ -20,7 +20,12 @@ export const PageScrollProgressBar = ({ container, color, bgColor, height, top }
   const handleScroll = () => {
     const scrollYHeight = window.scrollY;
     const viewPortHeight = document.documentElement.clientHeight;
-    const appHeight = container.clientHeight || 0;
+    let appHeight;
+    if(container){
+      appHeight=container?.clientHeight;
+    }else {
+      appHeight=document.body.clientHeight;
+    }
     const percent = (scrollYHeight * 100) / (appHeight - viewPortHeight);
     setscrollPosition(percent);
   };

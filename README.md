@@ -28,23 +28,30 @@ Import the component
 import PageScrollProgressBar from "react-page-scroll-progress-bar";
 ```
 
-#### `Required props:`
-
-| Parameter        | Description                                                      |
-|:-----------------|:-----------------------------------------------------------------|
-| container | The reference of the parent most HTML element of your react app. |the score from the classifier for each C position
-
-
 #### `Optional props:`
 
-| Parameter |     Default     | Description   |
-|:----------|:---------------:| :-------------|
-| color     |     #eb5757     |Color of the progress bar as a hex string
-| bgColor   |     #f2f2f2     |Color of the progress bar background as a hex string 
-| height    | 0.25rem or 4px  |Height of the progress bar
-| top       |        0        |Top position
+| Parameter |    Default     | Description                                                         |
+|:----------|:--------------:|:--------------------------------------------------------------------|
+| container | document.body  | The reference of the parent most element of your react app.         |
+| color     |    #eb5757     | Color of the progress bar as a hex string                           
+| bgColor   |    #f2f2f2     | Color of the progress bar background as a hex string                
+| height    | 0.25rem or 4px | Height of the progress bar                                          
+| top       |       0        | Top position                                                        
 
-### `Example -`
+### `Example with document body as the container -`
+
+```bash
+const App = () => {
+  return (
+    <PageScrollProgressBar color="#00FFFF" bgColor="#f2f2f2" height="6px" />
+    <div className="App">
+      APP
+    </div>
+  )
+}
+```
+
+### `Example with app container element -`
 
 ```bash
 const App = () => {
@@ -52,7 +59,7 @@ const App = () => {
   const AppRef = useRef(null); 
 
   return (
-    <PageScrollProgressBar parentElement={AppRef.current} color="#00FFFF" bgColor="#f2f2f2" height="6px" />
+    <PageScrollProgressBar container={AppRef.current} color="#00FFFF" bgColor="#f2f2f2" height="6px" />
     <div className="App" ref={AppRef}>
       APP
     </div>
@@ -60,6 +67,8 @@ const App = () => {
 
 }
 ```
+
+
 
 [Checkout the Example app](https://react-qmmsys.stackblitz.io)
 
