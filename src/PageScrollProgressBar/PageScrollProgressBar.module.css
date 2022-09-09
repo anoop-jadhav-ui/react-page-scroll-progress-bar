@@ -1,6 +1,6 @@
 .pageScroll {
   position: fixed;
-  top: 0;
+  top: var(--top);
   left: 0;
   width: 100%;
   z-index: 1;

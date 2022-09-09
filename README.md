@@ -30,18 +30,19 @@ import PageScrollProgressBar from "react-page-scroll-progress-bar";
 
 #### `Required props:`
 
-| Parameter | Description                                                                |
-|:----------|:---------------------------------------------------------------------------|
-| AppRef  | The reference (useRef) of the parent most HTML element of your react app. |the score from the classifier for each C position
+| Parameter        | Description                                                      |
+|:-----------------|:-----------------------------------------------------------------|
+| container | The reference of the parent most HTML element of your react app. |the score from the classifier for each C position
 
 
 #### `Optional props:`
 
-| Parameter           |     Default      | Description   |
-|:--------------------|:----------------:| :-------------|
-| progressBarColor  |     #eb5757     |Color of the progress bar as a hex string
-| progressBarBgColor  |     #f2f2f2      |Color of the progress bar background as a hex string 
-| progressBarHeight | 0.25rem or 4px |Height of the progress bar
+| Parameter |     Default     | Description   |
+|:----------|:---------------:| :-------------|
+| color     |     #eb5757     |Color of the progress bar as a hex string
+| bgColor   |     #f2f2f2     |Color of the progress bar background as a hex string 
+| height    | 0.25rem or 4px  |Height of the progress bar
+| top       |        0        |Top position
 
 ### `Example -`
 
@@ -51,7 +52,7 @@ const App = () => {
   const AppRef = useRef(null); 
 
   return (
-    <PageScrollProgressBar AppRef={AppRef} progressBarColor="#00FFFF" progressBarBgColor="#f2f2f2" progressBarHeight="6px" />
+    <PageScrollProgressBar parentElement={AppRef.current} color="#00FFFF" bgColor="#f2f2f2" height="6px" />
     <div className="App" ref={AppRef}>
       APP
     </div>
