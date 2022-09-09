@@ -1,6 +1,6 @@
 {
   "name": "react-page-scroll-progress-bar",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Page scroll progress bar",
   "main": "dist/",
   "types": "./dist/index.d.ts",
@@ -21,7 +21,8 @@
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^4.8.3"
   },
   "files": [
     "/dist"
