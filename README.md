@@ -43,7 +43,7 @@ import PageScrollProgressBar from "react-page-scroll-progress-bar";
 ```bash
 const App = () => {
   return (
-    <PageScrollProgressBar color="#00FFFF" bgColor="#f2f2f2" height="6px" />
+    <PageScrollProgressBar color="#00FFFF" bgColor="transparent" height="6px" />
     <div className="App">
       APP
     </div>
