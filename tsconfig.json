@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2015",
     "jsx": "react",
     "module": "esnext",
     "moduleResolution": "node",
@@ -14,9 +14,6 @@
   },
   "exclude": [
     "node_modules",
-  ],
-  "hooks": [
-    "copy-files"
   ],
   "include": [
     "src",
