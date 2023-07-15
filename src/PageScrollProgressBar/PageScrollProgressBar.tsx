@@ -7,24 +7,33 @@ interface Props {
   height?: string;
   top?: string;
 }
-export const PageScrollProgressBar = ({ container, color, bgColor, height, top }: Props) => {
+export const PageScrollProgressBar = ({
+  container,
+  color,
+  bgColor,
+  height,
+  top,
+}: Props) => {
   const [scrollPosition, setscrollPosition] = useState<number>(0);
 
-  const cssStyles = useMemo(() => ({
-    "--page-scroll-bar-color": color || "#eb5757",
-    "--page-scroll-background-color": bgColor || "#f2f2f2",
-    "--page-scroll-height": height || "0.25rem",
-    "--top": top || "0"
-  }),[color, bgColor, height, top])
+  const cssStyles = useMemo(
+    () => ({
+      "--page-scroll-bar-color": color || "#eb5757",
+      "--page-scroll-background-color": bgColor || "#f2f2f2",
+      "--page-scroll-height": height || "0.25rem",
+      "--top": top || "0",
+    }),
+    [color, bgColor, height, top]
+  );
 
   const handleScroll = () => {
     const scrollYHeight = window.scrollY;
     const viewPortHeight = document.documentElement.clientHeight;
     let appHeight;
-    if(container){
-      appHeight=container?.clientHeight;
-    }else {
-      appHeight=document.body.clientHeight;
+    if (container) {
+      appHeight = container?.clientHeight;
+    } else {
+      appHeight = document.body.clientHeight;
     }
     const percent = (scrollYHeight * 100) / (appHeight - viewPortHeight);
     setscrollPosition(percent);
@@ -37,6 +46,15 @@ export const PageScrollProgressBar = ({ container, color, bgColor, height, top }
     };
   }, []);
 
-  return <progress className={styles.pageScroll} style={cssStyles as React.CSSProperties}  id="top-scroll-bar" data-testid="top-scroll-bar" value={scrollPosition} max={100} />;
+  return (
+    <progress
+      className={styles.pageScroll}
+      style={cssStyles as React.CSSProperties}
+      id="top-scroll-bar"
+      data-testid="top-scroll-bar"
+      value={scrollPosition}
+      max={100}
+    />
+  );
 };
 export default PageScrollProgressBar;
