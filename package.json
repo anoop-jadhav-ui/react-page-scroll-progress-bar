@@ -9,7 +9,8 @@
     ".": "./dist/index.js"
   },
   "scripts": {
-    "build": "parcel build"
+    "build": "parcel build",
+    "publish-package": "parcel build && npm publish"
   },
   "author": "Anoop Jadhav @anoop-jadhav-ui <anoopjadhav@gmail.com>",
   "repository": {
@@ -42,6 +43,6 @@
     "page-scroll-progress"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org"
   }
 }
