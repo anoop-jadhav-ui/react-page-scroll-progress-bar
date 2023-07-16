@@ -40,5 +40,8 @@
     "page-top-scrollbar",
     "react-page-scroll-progress",
     "page-scroll-progress"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
